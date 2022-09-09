@@ -7,10 +7,12 @@ dado1 = Math.floor(Math.random() * 6) + 1;
 dado2 = Math.floor(Math.random() * 6) + 1;
 
 let lista1 = document.createElement("li");
+
 let tagDado1 = document.createElement("p");
-tagDado1.innerText = "Resultado dado 1: " + dado1;
+tagDado1.innerText = "Resultado dado 1: valor " + dado1;
+
 let tagDado2 = document.createElement("p");
-tagDado2 = "Resultado dado 2 :" + dado2;
+tagDado2 = "Resultado dado 2 : valor " + dado2;
 
 lista1.append(tagDado1, tagDado2);
 
@@ -89,17 +91,17 @@ let g10 = document.createElement("p");
 let g11 = document.createElement("p");
 let g12 = document.createElement("p");
 
-re2.innerText = "2:" + r2;
-re3.innerText = "3:" + r3;
-re4.innerText = "4:" + r4;
-re5.innerText = "5:" + r5;
-re6.innerText = "6:" + r6;
-re7.innerText = "7:" + r7;
-re8.innerText = "8:" + r8;
-re9.innerText = "9:" + r9;
-re10.innerText = "10:" + r10;
-re11.innerText = "11:" + r11;
-re12.innerText = "12:" + r12;
+re2.innerText = "Valor 2: " + r2 + " vezes";
+re3.innerText = "Valor 3: " + r3 + " vezes";
+re4.innerText = "Valor 4: " + r4 + " vezes";
+re5.innerText = "Valor 5: " + r5 + " vezes";
+re6.innerText = "Valor 6: " + r6 + " vezes";
+re7.innerText = "Valor 7: " + r7 + " vezes";
+re8.innerText = "Valor 8: " + r8 + " vezes";
+re9.innerText = "Valor 9: " + r9 + " vezes";
+re10.innerText = "Valor 10: " + r10 + " vezes";
+re11.innerText = "Valor 11: " + r11 + " vezes";
+re12.innerText = "Valor 12: " + r12 + " vezes";
 
 g2.innerText = "";
 g2.style.backgroundColor = "red";
@@ -156,8 +158,7 @@ g12.style.backgroundColor = "red";
 g12.style.width = r12 + "px";
 g12.style.height = "10px";
 
-tagLi.innerHTML = "Resultados:</strong>";
-tagLi.innerHTML = "* Resultado numérico e abaixo sua representação gráfica";
+tagLi.innerText = "Resultados:\n* resultado numérico acima e sua representação gráfica abaixo: \n\n";
 
 tagLi.append(
   re2,
